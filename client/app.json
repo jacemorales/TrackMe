@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "TrackMe",
+    "slug": "trackme",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.trackme",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TrackMe requires location access to search for your current position and draw routes to your destination.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TrackMe needs access to your location in the background to continuously update your live trip route and calculate correct remaining ETAs even when the device is locked.",
+        "NSLocationAlwaysUsageDescription": "TrackMe needs continuous background location tracking to monitor your safe arrival and stream movement telemetry.",
+        "UIBackgroundModes": [
+          "location"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_IOS_API_KEY_HERE"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.trackme",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_ANDROID_API_KEY_HERE"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow TrackMe to use your location at all times to calculate live distance and ETAs while on the move."
+        }
+      ]
+    ]
+  }
+}
