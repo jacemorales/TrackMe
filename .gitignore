@@ -1,0 +1,49 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+
+# Flutter / Dart build outputs and IDEs
+.dart_tool/
+.fvm/
+.idea/
+.vscode/
+.pub-cache/
+.pub/
+build/
+ephemeral/
+
+# Packages file
+.packages
+
+# Symbol files
+*.S
+*.bc
+*.c
+*.cc
+*.class
+*.d
+*.dylib
+*.exe
+*.o
+*.so
+
+# Translation temp files
+.g.dart
+
+# Android build files
+client/android/.gradle/
+client/android/local.properties
+client/android/app/build/
+client/android/app/Flutter/build/
+
+# iOS / macOS build files
+client/ios/Pods/
+client/ios/Frameworks/
+client/ios/.symlinks/
+client/ios/Runner/xcuserdata/
+client/ios/Runner.xcodeproj/project.xcworkspace/
+client/ios/Runner.xcworkspace/
+client/macos/Pods/
+
+# Web build files
+client/web/build/
