@@ -1,6 +1,6 @@
-# TrackMe: Modern Real-Time Location Tracking Mobile Application
+# TrackMe: Modern Real-Time Location Tracking Application
 
-TrackMe is a modern, cross-platform real-time location tracking application rebuilt with **Flutter** (Dart) for the mobile client and **Node.js + Socket.io** for the backend server.
+TrackMe is a modern, cross-platform real-time location tracking application built with **Flutter** (Dart) for the mobile app and **Node.js + Socket.io** for the real-time server.
 
 The app allows users to select a Start Point (A) and Destination (B), render optimal driving route polylines using OpenStreetMap / OSRM, and stream real-time GPS coordinates directly to the Node.js backend to synchronize connected clients with live metrics (Distance Left, ETA, Speed, and Heading).
 
@@ -24,15 +24,14 @@ The app allows users to select a Start Point (A) and Destination (B), render opt
 
 ```text
 TrackMe/
-├── client/                      # Flutter Cross-Platform Client
-│   ├── lib/
-│   │   ├── main.dart            # Main UI, Map Screen, and State Management
-│   │   ├── models/              # TelemetryData schema
-│   │   ├── services/            # Location, Socket, and Routing Services
-│   │   ├── theme/               # Material 3 Dark/Light Themes & Colors
-│   │   └── widgets/             # Reusable UI Components (HUD Cards, Custom Markers, Modals)
-│   ├── test/                    # Unit & Widget Tests
-│   └── pubspec.yaml             # Flutter Dependencies
+├── lib/                         # Flutter Application Source
+│   ├── main.dart                # Main UI, Map Screen, and State Management
+│   ├── models/                  # TelemetryData schema
+│   ├── services/                # Location, Socket, and Routing Services
+│   ├── theme/                   # Material 3 Dark/Light Themes & Colors
+│   └── widgets/                 # Reusable UI Components (HUD Cards, Custom Markers, Modals)
+├── test/                        # Unit & Widget Tests
+├── pubspec.yaml                 # Flutter Dependencies
 ├── server/                      # Real-time Node.js Socket Server
 │   ├── package.json
 │   └── server.js                # Express + Socket.io Server
@@ -63,10 +62,11 @@ The server will start listening on `http://localhost:3000` (or `http://10.0.2.2:
 
 ---
 
-## Step 2: Running the Flutter Mobile Client
+## Step 2: Running the Flutter App
+
+From the root directory of the project:
 
 ```bash
-cd client
 flutter pub get
 flutter run
 ```
@@ -84,7 +84,6 @@ flutter run
 To run all unit and widget tests:
 
 ```bash
-cd client
 flutter test
 ```
 

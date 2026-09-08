@@ -31,19 +31,19 @@ ephemeral/
 .g.dart
 
 # Android build files
-client/android/.gradle/
-client/android/local.properties
-client/android/app/build/
-client/android/app/Flutter/build/
+android/.gradle/
+android/local.properties
+android/app/build/
+android/app/Flutter/build/
 
 # iOS / macOS build files
-client/ios/Pods/
-client/ios/Frameworks/
-client/ios/.symlinks/
-client/ios/Runner/xcuserdata/
-client/ios/Runner.xcodeproj/project.xcworkspace/
-client/ios/Runner.xcworkspace/
-client/macos/Pods/
+ios/Pods/
+ios/Frameworks/
+ios/.symlinks/
+ios/Runner/xcuserdata/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcworkspace/
+macos/Pods/
 
 # Web build files
-client/web/build/
+web/build/
